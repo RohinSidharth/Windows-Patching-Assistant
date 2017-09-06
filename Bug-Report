@@ -1,0 +1,8 @@
+REGISTERED BUGS
+1. A line which has a selection will not display new updates on the monitoring screen. 
+
+Workaround: Moving the selection to another record lets the old record get updated in next screen refresh. But this causes the issue to move to the current selected record.
+
+Cause: Presumed cause is that prior to every update of the screen, the script tries to preserve the visible state on the screen. This includes the vertical and horizontal scroll position, selected record etc. This is probably also causing the data to stay invisible.
+
+Fix: Will be fixed in next release.
